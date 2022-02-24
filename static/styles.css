@@ -1,0 +1,15 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body {
+    height: 100vh;
+    bg: #d0e6f1 !important; }
+
