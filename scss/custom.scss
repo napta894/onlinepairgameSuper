@@ -1,0 +1,24 @@
+// customized variables
+
+$primary: #d0e6f1;
+$cyan:    #0dcaf0 !default;
+
+
+// import bootstrap
+@import ".../node_modules/boostrap/scss/boostrap";
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Your variable overrides
+$body-bg: #384e77;
+$body-color: #111;
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//theme colors
+
+
+$danger: #ff4136;
