@@ -1,2 +1,2 @@
-# onlinepairgame
+# onlinequizgame
 
