@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
-
 body {
     height: 100vh;
-    bg: #d0e6f1 !important; }
+  ; }
 
+
+:root {
+
+  --bs-blue: #0d6efd;}
