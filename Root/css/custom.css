@@ -1,13 +1,30 @@
 
-a {
-  color: var(--bs-blue);
+/*********************************************/
+/*              GENERAL CSS                  "/
+/*********************************************/
+ 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  color: #343a40;
+  background: #c5adeb !important;
+}
+p {
+  line-height: 1.9;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
 }
 
-body,
-h1 {
-  font-weight: 300;
-  --bs: $cyan-100; 
-  font: 1rem/1.5 var(--bs-font-sans-serif);
+/*********************************************/
+/*              UTILITY CSS                  "/
+/*********************************************/
+ 
+.text-sub {
+  color: #9b9bae !important;
+}
+.bg-grey {
+  background-color: #F8F6FA !important;
 }
 
 #intro {

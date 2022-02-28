@@ -18,24 +18,23 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
 
 <!-- css -->
-  <link rel="stylesheet" href="css/mdb.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
 
 <!-- Jquery-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 
   <title>Online Quiz</title>
-  <body>
-    
-
-
+  <body class="bg-grey">
     <div class="container my-5">
       <div id="intro">
         <h1>Welcome to  the quiz game Super</h1>
-       <h2>Choose from the answers below to begin</h2>
+        <br>
+       <h2>Choose from the answers below</h2>
         <div class="counter">
           <p class="prefix">Question:</p>
           <h1 id="counter">1/10</h1>
@@ -47,14 +46,14 @@
       </div>
       <div class="question-holder row">
         <div class="col-12">
-          <h1 id="question">What is the answer to this question?</h1>
+          <h1 id="question">What is the capital of France ?</h1>
         </div>
       </div>
 <!-- question responses -->
         <div class="row">
           <div class="col-12">
             <div class="answer-container card">
-              <p class="answer-prefix">A</p>
+              <p class="answer-prefix">London</p>
               <p class="answer-text" data-answer="a">Answer A</p>
             </div>
           </div>
@@ -62,7 +61,7 @@
         <div class="row">
           <div class="col-12">
             <div class="answer-container card">
-              <p class="answer-prefix">B</p>
+              <p class="answer-prefix">Paris</p>
               <p class="answer-text" data-answer="b">Answer B</p>
             </div>
           </div>
@@ -71,7 +70,7 @@
         <div class="row">
           <div class="col-12">
             <div class="answer-container card">
-              <p class="answer-prefix">C</p>
+              <p class="answer-prefix">Rome</p>
               <p class="answer-text" data-answer="c">Answer c</p>
             </div>
           </div>
@@ -79,7 +78,7 @@
         <div class="row">
           <div class="col-12">
             <div class="answer-container card">
-              <p class="answer-prefix">D</p>
+              <p class="answer-prefix">Berlin</p>
               <p class="answer-text" data-answer="d">Answer D</p>
             </div>
           </div>
@@ -113,10 +112,15 @@
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script src="js/scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  <link rel="javascript" src="js/scripts.js">
+
+  <!-- JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scrollspy.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/script.js"></script>
   </body>
 
 </html>
