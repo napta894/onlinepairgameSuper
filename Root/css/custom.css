@@ -30,10 +30,23 @@ h1, h2, h3, h4, h5, h6 {
 #intro {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+}
+
+body {
+  font: 1rem/1.5 var(--bs-font-sans-serif);
+}
+
+a {
+  color: var(--bs-blue);
+}
+
+.h2 {
+  text-align: left;
 }
 
 .prefix {
-  text-align: left;
+  text-align: center;
   font-size: 1rem;
 }
 
@@ -71,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .answer-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(104, 68, 246, 0.5);
 
   transform: translateY(-0.1rem);
   transition: transform 200ms;
