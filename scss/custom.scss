@@ -1,5 +1,23 @@
 // customized variables
 
+.btn {
+  display: inline-block;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  color: $body-color;
+  text-align: center;
+  text-decoration: if($link-decoration == none, null, none);
+  white-space: $btn-white-space;
+  vertical-align: middle;
+  cursor: if($enable-button-pointers, pointer, null);
+  user-select: none;
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  @include transition($btn-transition);
+}
+
 // import bootstrap
 @import ".../node_modules/boostrap/scss/boostrap";
 
@@ -15,6 +33,5 @@ $body-color: #111;
 @import "node_modules/bootstrap/scss/bootstrap";
 
 //theme colors
-
 
 $danger: #ff4136;
