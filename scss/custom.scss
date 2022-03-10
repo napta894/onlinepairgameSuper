@@ -1,37 +1,19 @@
 // customized variables
 
-.btn {
-  display: inline-block;
-  font-family: $btn-font-family;
-  font-weight: $btn-font-weight;
-  line-height: $btn-line-height;
-  color: $body-color;
-  text-align: center;
-  text-decoration: if($link-decoration == none, null, none);
-  white-space: $btn-white-space;
-  vertical-align: middle;
-  cursor: if($enable-button-pointers, pointer, null);
-  user-select: none;
-  background-color: transparent;
-  border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
-  @include transition($btn-transition);
-}
-
 // import bootstrap
 @import ".../node_modules/boostrap/scss/boostrap";
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-// Your variable overrides
-$body-bg: #384e77;
-$body-color: #111;
 
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
 /* import the Bootstrap */
-@import "bootstrap";
+
+/* import the necessary Bootstrap files */
+@import "bootstrap/functions";
+@import "bootstrap/variables";
 
 /* ------- customize primary button color -------- */   
 $mynewcolor: #c5adeb;
@@ -43,6 +25,16 @@ $mynewcolor: #c5adeb;
 .btn btn-lg btn-outline-primary {
     @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
 }
+@import "~bootstrap/scss/custom.scss";
 
+// Create your own map
+$custom-colors: #c5adeb;
 
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
+$theme-colors: (
+btn-outline-primary  : $custom-colors,
+);
+
+@import "bootstrap";    
