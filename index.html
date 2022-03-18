@@ -21,6 +21,7 @@
 
     <link href="root/css/all.css" rel="stylesheet" type="text/css" />
     <link href="root/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="scss/custom.scss" rel="stylesheet" type="text/scss"/>
 
 <!-- scss -->
 
@@ -32,35 +33,35 @@
 </head>
 
   <title>Online Quiz</title>
-  <body class="bg-grey">
-    <div id="quiz" class="container my-5">
-      <div class= "row justify-content-center align-items-center">
-         <div id="intro">
-           <h1>Welcome to  the quiz game Super</h1>
-         </div>
-         <div >
-           <h2 id="instructions">Choose from the answers below</h2>
-         <div class="counter">
-           <p class="prefix">Question:</p>
-           <h1 id="counter">1/10</h1>
-         </div>
-        <br>
-        <div class="score">
+  <body class="bg-gray flex">
+    <div id="quiz" class="container quiz-container my-5">
+      <div class= "row">
+           <h1 class="quiz-title">Welcome to  the quiz game Super</h1>
+           <h2 id="instructions">Choose the correct answer below</h2>
+           <div class="counter">
+             <p class="prefix">Question:</p>
+             <h1>1/10</h1>
+           </div>
+           <br>
+          <div>
            <p class="prefix">Score:</p>
-           <h1 id="score">3</h1>
+           <div class="quiz-score border flex>">
+            <span id="correct-score">0</span>/
+             <span  id="total-question ">10</span>
+           </div>
         </div>
       </div>
       <div class="question-holder row">
         <div class="col-12">
-          <h1 id="question">What is the capital of France ?</h1>
+          <h1 id="question" class="quiz-question">What is the capital of France ?<br> <span class="category">Geography</span></h1>
         </div>
       </div>
-    
-     <!-- answers -->
-     <div class="grid box">
-        <div class="row">
+
+     <!-- answers-options -->
+     <div class="grid box wrapper ">
+        <div class="row ">
           <div class="col-8">
-            <div class="answer-container class">
+            <div class="answer-container class ">
               <p class="answer-prefix">London</p>
               <p class="answer-text" data-answer="a">Answer A</p>
             </div>
@@ -69,7 +70,7 @@
 
         <div class="row">
           <div class="col-8">
-            <div class="answer-container class">
+            <div class="answer-container">
               <p class="answer-prefix">Paris</p>
               <p class="answer-text" data-answer="b">Answer B</p>
             </div>
@@ -95,17 +96,15 @@
         </div>
     </div>
 
+    <div id="result">
+      <!-- Results  -->
+    </div>
     <!-- next-button -->
-           <div id="submit">
-              <input  type="submit" class="btn btn-outline-primary" value="submit">
-            </div>
-
-          <!-- results -->
-     <div id="results"> 
-        
-     </div>
-        
-    
+           <br>
+           <div class="quiz-foot">
+              <button  id="check-answer submit" type="submit" class="btn btn-outline-primary btn-lg" value="submit">Check Answer</button>
+              <btn id="play-again" type="submit" class="btn btn-outline-primary btn-lg" value="submit">Try Again</btn>
+            </div>  
   </div>
 
 
@@ -119,6 +118,7 @@
   <script src="js/scrollspy.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/script.js"></script>
+
   </body>
 
 </html>
