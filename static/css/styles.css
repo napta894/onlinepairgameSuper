@@ -63,6 +63,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: whitesmoke !important;
 }
 
+.body {
+ font-weight:300;
+ background-color: #eee;
+}
+
 #intro {
   display: flex;
   justify-content: space-between;
@@ -96,9 +101,9 @@ a {
 
 #counter,
 #score {
-  text-align: justify;
-  color: #384e77;
+  text-align: center;
 }
+
 
 .row {
   text-align: center;
