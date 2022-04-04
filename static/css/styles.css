@@ -200,8 +200,8 @@ a {
 /*           Buttons             */
 
 .quiz-foot button {
- border:#c5adeb;
- background-color: #c5adeb;
+ background-color: #ffff;
+ border-color: #384e77;
  color: #384e77;
  font-family: 'poppins'sans-serif;
  font-size: 1.2rem;
@@ -209,6 +209,7 @@ a {
  padding: .5rem 1rem;
  margin: 0 auto;
  cursor: pointer;
+ margin-top: 2rem;
 }
 
 .quiz-foot button:hover {
@@ -220,10 +221,9 @@ a {
   transform: scale3d(0.95);
 }
 
-.btn {
+.btn, button {
   background-color:none;
   border-color: #384e77;
-  color: #384e77;
   font-size: large;
   font-family: 'poppins', sans-serif;
   display: center;
@@ -231,6 +231,7 @@ a {
   padding: .5rem 1rem;
   text-align: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .btn:hover {
