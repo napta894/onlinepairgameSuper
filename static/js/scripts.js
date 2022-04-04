@@ -141,7 +141,7 @@ let questions =
         }
     ]
 const question = document.getElementById("questions");
-const answers = Array.from(document.getElementbyClassName("answer-text"));
+const answers = Array.from(document.getElementsByClassName("answer-text"));
 const questionCounterText = document.getElementById("counter");
 const scoreText = document.getElementById("score");
 
@@ -153,19 +153,46 @@ let score;
 let MAX_QUESTIONS = 3;
 
 startGame = () => {
-    questionCounter= 0;
+    questionCounter = 0;
     score = 0;
-    AvailableQuetions = getRandomQuestions(questions, MAX_QUESTIONS);
-}
+    console.log(questions);
+
+    availableQuestions = getRandomQuestions(questions, MAX_QUESTIONS);
+    console.log(availableQuestions); 
+};
 
 const getRandomQuestions = (arr, n) => {
 
-    Let len = arr.lenght; 
+    let len = arr.lenght; 
     if (n > len) {
         throw new RangeError(
-            
-        )
+            "getRandomQuestions: more elements taken than available"
+        );
     }
- };
+
+    const shuffled = [...arr].sort(() => 0.5 - Math.random()); 
+
+
+
+    return (selected = shuffled.slice(0, n));
+};
+ 
+const getNewQuestion=() => {
+    if (availableQuestions.length === 0) {
+        alert("End of the game");
+        return;
+    }
+
+    questionCounter++;
+    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+
+    CurrentQuestion = availableQuestions[0];
+    question.innerText = "";
+
+    //availableQuestions.shift();
+    //getNewQuestion();
+}
+
+startGame();
 
 
