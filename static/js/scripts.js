@@ -187,12 +187,14 @@ const getNewQuestion=() => {
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
 
     CurrentQuestion = availableQuestions[0];
-    console.log(CurrentQuestion);
-    question.innerText = CurrentQuestion.question;
+    console.log(currentQuestion);
+    question.innerText = currentQuestion.question;
 
     console.log(answers);
 
-    answers.forEach()
+    answers.forEach((answer) => {
+       answer.innerText = currentQuestion [answer.dataset["answer"]]
+    })
 
     //availableQuestions.shift();
     //getNewQuestion();
